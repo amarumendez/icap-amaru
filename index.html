@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Character Analysis Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="title"><a href="index.html" style="text-decoration: none; color: white;">Inst4Gram</a></div>
+
+  <!-- Dark Mode Toggle Button -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <span>🌙 Dark Mode</span>
+  </div>
+
+  <div class="profile-container">
+    <!-- Profile Picture -->
+    <img src="https://4.bp.blogspot.com/_HDFMHG8ju8A/S_CMXZA4UXI/AAAAAAAAAK8/ktoOqFI8_rI/w1200-h630-p-k-no-nu/BookArt.jpg" alt="Juli and Bryce sitting in a tree" height="50" width="50">
+
+    <!-- IMAGE SOURCE: https://4.bp.blogspot.com/_HDFMHG8ju8A/S_CMXZA4UXI/AAAAAAAAAK8/ktoOqFI8_rI/w1200-h630-p-k-no-nu/BookArt.jpg -->
+    
+  </div>
+
+  <div class="data-container" id="dataContainer">
+    <!-- Posts, Followers, Following -->
+    <div id="posts"><div id="post-data">6</div> <span style="text-decoration: underline;">Posts</span></div>
+    <div id="followers"><div id="followers-data">500</div> <span style="text-decoration: underline;">Followers</span></div>
+    <div id="following"><div id="following-data">200</div> <span style="text-decoration: underline;">Following</span></div>
+  </div>
+
+  <div class="user-info">
+    <p>@JulesFlipped</p>
+    <p><strong>Name:</strong> Juli Baker</p>
+    <p><strong>Bio:</strong>🌈 Adventurous soul 🗺 <strong>|</strong> Humor junkie with a side of sarcasm 😂 <strong>|</strong> ☕️ Coffee & 📚 Book lover  <strong>|</strong> Weekend wanderer 🌄  <strong>|</strong> Embracing the chaos and making memories with my squad! ✨.</p>
+  </div>
+  
+  <div class="profile-info"></div>
+  <div class="posts-container">
+    <h3>Recent Posts</h3>
+    <div id="filter">
+      <span>Filter: </span>
+      <select>
+        <option>Newest</option>
+        <option>Popular</option>
+        <option>Oldest</option>
+      </select>
+    </div>
+
+    <!--
+    Empty Heart Icon: https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png
+    Filled Heart Icon: https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png
+    -->
+
+    <!--Down there is the Post gallery, I'm going to add a function when the user clicks on the post opens a small window screen with the actual post -->
+
+    <!-- Post 1 is the newest, Post 6 is the oldest -->
+
+    <!-- Post 1 -->
+    <div class="post" id="post_1">
+      
+      <img src="https://images.squarespace-cdn.com/content/v1/5ea97f3fd652bf2c1c1aeb7e/1594851283793-6EJGU6P68O8SLW990T1B/upside-down-rooster-not-safe.jpg" alt="img" height="250" width="250">
+      
+      <a href="javascript:void(0);" onclick="switchHeart(1)">
+        <img src="img/heart_outline.png" id="heart_icon_1" class="heart-icon" height="50" width="50">
+      </a>
+      
+      <span class="views" id="views1"">2k Views</span>
+      <span class="likes" id="likes1"> 500 Likes</span>
+      <p id="desc1" class="description">My Chicks Flip</p>
+      
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post" id="post_2">
+      <img src="https://i0.wp.com/highschool.latimes.com/wp-content/uploads/2022/03/Flipped-Movie-Review-Thumbnail.jpg?resize=361%2C241&ssl=1" alt="img" height="250" width="250">
+
+      <a href="javascript:void(0);" onclick="switchHeart(2)">
+         <img src="img/heart_outline.png" id="heart_icon_2" class="heart-icon" height="50" width="50">
+      </a>
+
+      <span class="views" id="views2">900 Views</span>
+      <span class="likes" id="likes2">20 Likes</span>
+      <p id="desc1" class="description">Hes wanna my eggs</p>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post" id="post_3">
+      <img src="https://pbs.twimg.com/media/C4Q7hYZUEAAXA3R.jpg" alt="img" height="250" width="250">
+
+      <a href="javascript:void(0);" onclick="switchHeart(3)">
+         <img src="img/heart_outline.png" id="heart_icon_3" class="heart-icon" height="50" width="50">
+      </a>
+
+      <span class="views" id="views3">10k Views</span>
+      <span class="likes" id="likes3">5k Likes</span>
+      <p id="desc1" class="description">Our First House! 💕 🏠</p>
+    </div>
+    
+    <!-- Post 4 -->
+    <div class="post" id="post_4">
+      <img src="https://images.summitmedia-digital.com/cosmo/images/2021/04/12/flipped-movie-1618215423.jpg" alt="img" height="250" width="250">
+
+      <a href="javascript:void(0);" onclick="switchHeart(4)">
+         <img src="img/heart_outline.png" id="heart_icon_4" class="heart-icon" height="50" width="50">
+      </a>
+
+      <span class="views" id="views4">100k Views</span>
+      <span class="likes" id="likes4">10k Likes</span>
+      <p id="desc1" class="description">The Squad <strong>|</strong> 👬👬 </p>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="post" id="post_5">
+      <img src="https://images.gr-assets.com/hostedimages/1384686008ra/6932366.gif" alt="img" height="250" width="250">
+
+      <a href="javascript:void(0);" onclick="switchHeart(5)">
+         <img src="img/heart_outline.png" id="heart_icon_5" class="heart-icon" height="50" width="50">
+      </a>
+
+      <span class="views" id="views5">3k Views</span>
+      <span class="likes" id="likes5">243 Likes</span>
+      <p id="desc1" class="description">gimme</p>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="post" id="post_6">
+      <img src="https://typomance.files.wordpress.com/2020/01/a89ff108-728b-4194-9f30-6bb368d408ae.jpeg?w=1024" alt="img" height="250" width="250">
+
+      <a href="javascript:void(0);" onclick="switchHeart(6)">
+         <img src="img/heart_outline.png" id="heart_icon_6" class="heart-icon" height="50" width="50">
+      </a>
+
+      <span class="views" id="views6">3k Views</span>
+      <span class="likes" id="likes6">143 Likes</span>
+      <p id="desc1" class="description">we as little kids</p>
+    </div>
+    
+    <!-- Post Window: Showcases the post specified by its post ID -->
+    <div class="post-window"></div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
