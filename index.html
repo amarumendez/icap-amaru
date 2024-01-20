@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <div id="title"><a href="https://amarumendez.github.io/icap-amaru/" style="text-decoration: none; color: white;">Inst4Gram</a></div>
+  <div id="title"><a href="index.html" style="text-decoration: none; color: white; font-family: cursive;">Inst4Gram</a></div>
 
   <!-- Dark Mode Toggle Button -->
   <div class="dark-mode-toggle" onclick="toggleDarkMode()">
@@ -20,7 +20,8 @@
     <!-- Profile Picture -->
     <img src="https://4.bp.blogspot.com/_HDFMHG8ju8A/S_CMXZA4UXI/AAAAAAAAAK8/ktoOqFI8_rI/w1200-h630-p-k-no-nu/BookArt.jpg" alt="Juli and Bryce sitting in a tree" height="50" width="50">
 
-    <!-- IMAGE SOURCE: https://4.bp.blogspot.com/_HDFMHG8ju8A/S_CMXZA4UXI/AAAAAAAAAK8/ktoOqFI8_rI/w1200-h630-p-k-no-nu/BookArt.jpg -->
+     <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 24px; font-weight: lighter;">JulesFlipped</p>
+    <button class="profBtn" id="followBtn" onclick="followUser()">Follow</button>
     
   </div>
 
@@ -32,30 +33,27 @@
   </div>
 
   <div class="user-info">
-    <p>@JulesFlipped</p>
-    <p><strong>Name:</strong> Juli Baker</p>
-    <p><strong>Bio:</strong>🌈 Adventurous soul 🗺 <strong>|</strong> Humor junkie with a side of sarcasm 😂 <strong>|</strong> ☕️ Coffee & 📚 Book lover  <strong>|</strong> Weekend wanderer 🌄  <strong>|</strong> Embracing the chaos and making memories with my squad! ✨.</p>
+    
+    <p style=" font-family: sans-serif; font-weight: bold; font-size: 18px;">Juli Baker</p> <img src="https://static.vecteezy.com/system/resources/previews/010/153/386/original/tick-check-mark-icon-sign-symbol-design-free-png.png" alt="checkmark" width="10" height="10">
+    
+    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">🌈 Adventurous soul 🗺 <strong>|</strong> Humor junkie with a side of sarcasm 😂 <strong>|</strong> ☕️ Coffee & 📚 Book lover  <strong>|</strong> Weekend wanderer 🌄  <strong>|</strong> Embracing the chaos and making memories with my squad! ✨.</p>
   </div>
+
+  <hr style="width: 20%;">
   
   <div class="profile-info"></div>
   <div class="posts-container">
-    <h3>Recent Posts</h3>
+    <h3 style="text-decoration: underline;">Posts</h3>
     <div id="filter">
       <span>Filter: </span>
-      <select>
+      <select id="filterSelect">
         <option>Newest</option>
         <option>Popular</option>
         <option>Oldest</option>
       </select>
     </div>
 
-    <!--
-    Empty Heart Icon: https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png
-    Filled Heart Icon: https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png
-    -->
-
     <!--Down there is the Post gallery, I'm going to add a function when the user clicks on the post opens a small window screen with the actual post -->
-
     <!-- Post 1 is the newest, Post 6 is the oldest -->
 
     <!-- Post 1 -->
@@ -140,7 +138,8 @@
     
     <!-- Post Window: Showcases the post specified by its post ID -->
     <div class="post-window"></div>
-    
+
+    <p>Check Out my other stuff on <a href="https://github.com/amarumendez">Github</a>. This was just a homework assignment, just practice. These picture you can find by searching Bryce and Juli Baker in Real Life on <a href="https://www.google.com/search?sca_esv=600010291&rlz=1C1ONGR_enUS1062US1062&q=Bryce+and+juli+in+real+life&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiikq-9ouuDAxUBkmoFHeJUCPkQ0pQJegQIEBAB&biw=1229&bih=590&dpr=1.56">Google</a></p>
   </div>
 
   <script src="script.js"></script>
