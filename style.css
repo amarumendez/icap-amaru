@@ -5,6 +5,20 @@ body {
   transition: background-color 0.5s;
 }
 
+.profBtn {
+  text-align: center;
+  font-weight: bolder; 
+  font-size: 1.1em; 
+  padding: 10px;
+  background-color: #242323;
+  color: white;
+  border: unset;
+  border-radius: 2px;
+  width: 6rem;
+  height: 2.25em;
+  cursor: pointer;
+}
+
 .light-mode {
   background-color: #fff;
   color: #000;
@@ -16,11 +30,12 @@ body {
 }
 
 #title {
-  background-color: #405de6;
+  background-color: #141414;
   color: white;
   text-align: center;
   padding: 10px;
   font-size: 24px;
+  border-bottom: 2.5px solid #1f1f1f;
 }
 
 .dark-mode-toggle {
@@ -38,6 +53,7 @@ body {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+   user-select: none;
 }
 
 .data-container {
@@ -100,6 +116,7 @@ body {
 
 .post img {
   border-radius: 8px;
+   user-select: none;
 }
 
 .heart-icon {
