@@ -1,9 +1,25 @@
 function toggleDarkMode() {
   const body = document.body;
-  body.classList.toggle('dark-mode');
-  body.classList.toggle('light-mode');
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('mode', 'light');
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    document.querySelector('.dark-mode-toggle span').innerText = '🌙 Dark Mode';
+  } else {
+    localStorage.setItem('mode', 'dark');
+    body.classList.remove('light-mode');
+    body.classList.add('dark-mode');
+    document.querySelector('.dark-mode-toggle span').innerText = '☀️ Light Mode';
+  }
 }
 
+// Retrieve mode from localStorage when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  const mode = localStorage.getItem('mode');
+  if (mode === 'dark') {
+    toggleDarkMode();
+  }
+});
 // Function to generate a random number between min and max
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -55,5 +71,18 @@ function switchHeart(postId) {
       heartIcon.src = 'img/heart_outline.png';
       console.log(`Unliked post ${postId}!`);
     }
+  }
+}
+
+// I will add filter system soon!
+
+// Post code ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+function followUser() {
+  const followButton = document.getElementById('followBtn');
+  if (followButton.textContent === 'Followed') {
+    followButton.textContent = 'Follow';
+  } else {
+    followButton.textContent = 'Followed';
   }
 }
